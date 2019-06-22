@@ -1,0 +1,78 @@
+$blue: #007BFF;
+$tan: #6C757D;
+$green: #28A745;
+$red: #DC3545;
+$orange: #FFC107;
+$skyblue: #17A2B8;
+$light: #F8F9FA;
+$black: #343A40;
+$white: #ffffff;
+$tranparent: none;
+
+$bg-lighten: 35%;
+
+$border: #ccc;
+
+// TEXTs
+
+$text-colors: () !default;
+$text-colors: map-merge((
+    "text-green": $green,
+    "text-tan": $tan,
+    "text-blue": $blue,
+    "text-skyblue": $skyblue,
+    "text-orange": $orange,
+    "text-light": $light,
+    "text-black": $black,
+    "text-white": $white,
+    "text-red": $red,
+    'text-tranparent': $tranparent,
+) , $text-colors);
+
+@each $name,$color in $text-colors{
+    .#{$name}{
+        color: $color;
+    }
+}
+
+// BACKGROUNDs
+
+$bg-color: () !default;
+$bg-color: map-merge((
+    "bg-green": lighten($green,$bg-lighten),
+    "bg-tan": lighten($tan,$bg-lighten),
+    "bg-blue": lighten($blue,$bg-lighten),
+    "bg-light": lighten($light,$bg-lighten),
+    "bg-orange": lighten($orange,$bg-lighten),
+    "bg-skyblue":($skyblue),
+    "bg-black":($black),
+    "bg-white": lighten($white,$bg-lighten),
+    "bg-red":($red),
+), $bg-color);
+
+@each $name,$color in $bg-color{
+    .#{$name}{
+        background-color: $color;
+    }
+}
+
+//Table color
+$table-color: ()!default;
+$table-color: map-merge((
+    "blue": $blue,
+    "tan": $tan,
+    "green": $green,
+    "red": $red,
+    "orange": $orange,
+    "skyblue": $skyblue,
+    "light": $light,
+    "black": $black,
+    "white": $white,
+    "tranparent": $tranparent
+),$table-color);
+
+@each $color-name,$color in $table-color{
+    .table-#{$color-name}{
+        background-color: $color;
+    }
+}
