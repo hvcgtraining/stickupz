@@ -93,9 +93,13 @@
             }
         }
     }
+    .title{
+        margin: 1rem 0 !important;
+    }
 }
 @media only screen and (max-width: 567px){
     .form{
+        padding-bottom: 0;
         .form-signup{
             margin: 0;
             padding: 0 1rem;
@@ -105,5 +109,9 @@
                 }
             }
         }
+        
+    }
+    .title{
+        margin: .5rem 0 !important;
     }
 }

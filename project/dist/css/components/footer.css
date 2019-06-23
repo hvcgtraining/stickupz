@@ -1,0 +1,16 @@
+footer {
+  text-align: center;
+  background: #068cc9;
+  color: white;
+  padding: 2rem; }
+  footer h2 {
+    font-weight: 400; }
+  footer p {
+    font-size: 1.6rem; }
+  footer .icon {
+    display: inline;
+    padding: 0 0.8rem;
+    color: white;
+    text-decoration: none; }
+  footer .child {
+    font-size: 1.4rem; }

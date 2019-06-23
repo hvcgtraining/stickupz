@@ -1,0 +1,131 @@
+.navigation {
+  z-index: 3; }
+  .navigation .header {
+    position: fixed;
+    width: 100%;
+    z-index: 5; }
+    .navigation .header .language {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #007dc6;
+      padding: 0.5rem 2rem; }
+      .navigation .header .language .laguage-content p {
+        color: white;
+        font-size: 1.3rem; }
+      .navigation .header .language .language-flag {
+        display: flex; }
+        .navigation .header .language .language-flag .selected {
+          background: #9fceeb; }
+        .navigation .header .language .language-flag .language-flag-block {
+          width: 50%;
+          border: 1px solid white;
+          padding: 0.5 1rem;
+          border-radius: 30px;
+          margin-left: 1rem; }
+          .navigation .header .language .language-flag .language-flag-block a {
+            display: block;
+            padding: 0 3rem; }
+    .navigation .header .nav {
+      padding: 0 2rem;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .navigation .header .nav .nav__logo {
+        padding-top: 2rem; }
+      .navigation .header .nav .nav__list {
+        list-style-type: none;
+        z-index: 5; }
+        .navigation .header .nav .nav__list .nav__item {
+          display: inline-block;
+          z-index: 5; }
+          .navigation .header .nav .nav__list .nav__item .nav__link {
+            z-index: 5;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #9fceeb;
+            padding: 1rem 0.5rem;
+            margin-left: 3rem;
+            transition: 0.3s;
+            position: relative; }
+            .navigation .header .nav .nav__list .nav__item .nav__link:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 100%;
+              bottom: 0;
+              background: transparent;
+              border-bottom: 3px solid #007dc6;
+              transition: 0.3s; }
+        .navigation .header .nav .nav__list .active .nav__link {
+          color: #007dc6;
+          font-weight: 700; }
+          .navigation .header .nav .nav__list .active .nav__link:after {
+            right: 0; }
+    .navigation .header .nav-mobile {
+      padding: 0 2rem;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      display: none; }
+      .navigation .header .nav-mobile .nav__logo {
+        padding-top: 2rem; }
+      .navigation .header .nav-mobile .nav__toggle i {
+        font-size: 2rem; }
+      .navigation .header .nav-mobile .nav__list {
+        z-index: 99;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        list-style-type: none;
+        background: white;
+        border: 1px solid #eeee; }
+        .navigation .header .nav-mobile .nav__list .nav__item .nav__link {
+          z-index: 99;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          color: #9fceeb;
+          padding: 1rem 0.5rem;
+          margin-left: 0rem;
+          transition: 0.3s;
+          position: relative; }
+          .navigation .header .nav-mobile .nav__list .nav__item .nav__link:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+            background: transparent;
+            border-bottom: 3px solid #007dc6;
+            transition: 0.3s; }
+        .navigation .header .nav-mobile .nav__list .active .nav__link {
+          color: #007dc6;
+          font-weight: 700; }
+          .navigation .header .nav-mobile .nav__list .active .nav__link:after {
+            right: 0; }
+
+@media only screen and (max-width: 576px) {
+  .navigation .header {
+    position: fixed;
+    width: 100%; }
+    .navigation .header .language {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .navigation .header .language .laguage-content p {
+        text-align: center; }
+    .navigation .header .nav {
+      display: none; }
+    .navigation .header .nav-mobile {
+      display: flex; } }

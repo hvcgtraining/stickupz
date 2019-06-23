@@ -1,0 +1,83 @@
+.title {
+  margin: 3rem 0;
+  text-align: center;
+  padding: 2rem;
+  font-family: sans-serif;
+  font-weight: 500; }
+  .title p {
+    color: #007dc6;
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+
+.form {
+  background: whitesmoke;
+  text-align: center;
+  padding-bottom: 5rem; }
+  .form .form-signup {
+    background: white;
+    text-align: left;
+    padding: 0 7rem;
+    margin: 0 7.5rem;
+    box-shadow: 0 2px 3px 1px grey; }
+    .form .form-signup h2 {
+      padding: 2rem 1.2rem;
+      font-weight: 500; }
+    .form .form-signup .form-main {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .form .form-signup .form-main form {
+        width: 50%;
+        padding: 0 1rem;
+        margin-top: 1rem; }
+        .form .form-signup .form-main form p {
+          margin-top: 4rem; }
+        .form .form-signup .form-main form input {
+          border: none;
+          border-bottom: 1px solid gray;
+          width: 100%;
+          padding: .5rem;
+          font-size: 1.4rem; }
+    .form .form-signup .btn {
+      margin: 4rem 0;
+      text-align: center; }
+      .form .form-signup .btn button {
+        outline: none;
+        border-radius: 4rem;
+        border: 1px solid transparent;
+        background: #007dc6;
+        color: white;
+        padding: .7rem 3rem;
+        margin-bottom: 2rem;
+        transition: all .5s ease; }
+        .form .form-signup .btn button:hover {
+          background-color: #fff;
+          border: 1px solid #007dc6;
+          color: #007dc6;
+          transition: all .5s ease; }
+
+@media only screen and (max-width: 992px) {
+  .form .form-signup {
+    margin: 0; }
+    .form .form-signup .form-main form {
+      width: 50%; } }
+
+@media only screen and (max-width: 768px) {
+  .form .form-signup {
+    margin: 0;
+    padding: 0 2rem; }
+    .form .form-signup .form-main form {
+      width: 100%; }
+  .title {
+    margin: 1rem 0 !important; } }
+
+@media only screen and (max-width: 567px) {
+  .form {
+    padding-bottom: 0; }
+    .form .form-signup {
+      margin: 0;
+      padding: 0 1rem; }
+      .form .form-signup .form-main form {
+        width: 100%; }
+  .title {
+    margin: .5rem 0 !important; } }
