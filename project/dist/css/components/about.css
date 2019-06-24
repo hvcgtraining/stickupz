@@ -79,8 +79,10 @@ button {
 @media only screen and (max-width: 576px) {
   .des-a-t {
     padding: 1rem !important; }
-  .about-bot .contend-a-b {
-    padding: 1rem; } }
+  .about-bot {
+    margin: 0 !important; }
+    .about-bot .contend-a-b {
+      padding: 1rem; } }
 
 @media only screen and (max-width: 768px) {
   .about-top .des-a-t .tit-des-t {
