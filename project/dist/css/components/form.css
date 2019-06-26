@@ -67,17 +67,11 @@
     margin: 0;
     padding: 0 2rem; }
     .form .form-signup .form-main form {
-      width: 100%; }
-  .title {
-    margin: 1rem 0 !important; } }
+      width: 100%; } }
 
 @media only screen and (max-width: 567px) {
-  .form {
-    padding-bottom: 0; }
-    .form .form-signup {
-      margin: 0;
-      padding: 0 1rem; }
-      .form .form-signup .form-main form {
-        width: 100%; }
-  .title {
-    margin: .5rem 0 !important; } }
+  .form .form-signup {
+    margin: 0;
+    padding: 0 1rem; }
+    .form .form-signup .form-main form {
+      width: 100%; } }

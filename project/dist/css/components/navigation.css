@@ -1,9 +1,9 @@
 .navigation {
-  z-index: 3; }
+  z-index: 0; }
   .navigation .header {
     position: fixed;
     width: 100%;
-    z-index: 5; }
+    z-index: 33; }
     .navigation .header .language {
       display: flex;
       justify-content: space-between;
@@ -37,12 +37,12 @@
         padding-top: 2rem; }
       .navigation .header .nav .nav__list {
         list-style-type: none;
-        z-index: 5; }
+        z-index: 99; }
         .navigation .header .nav .nav__list .nav__item {
           display: inline-block;
-          z-index: 5; }
+          z-index: 99; }
           .navigation .header .nav .nav__list .nav__item .nav__link {
-            z-index: 5;
+            z-index: 99;
             display: block;
             text-align: center;
             text-decoration: none;

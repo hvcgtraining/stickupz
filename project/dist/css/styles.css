@@ -893,11 +893,11 @@ body, td, th, input, button {
     transition: all .3s ease; }
 
 .navigation {
-  z-index: 3; }
+  z-index: 0; }
   .navigation .header {
     position: fixed;
     width: 100%;
-    z-index: 5; }
+    z-index: 33; }
     .navigation .header .language {
       display: flex;
       justify-content: space-between;
@@ -931,12 +931,12 @@ body, td, th, input, button {
         padding-top: 2rem; }
       .navigation .header .nav .nav__list {
         list-style-type: none;
-        z-index: 5; }
+        z-index: 99; }
         .navigation .header .nav .nav__list .nav__item {
           display: inline-block;
-          z-index: 5; }
+          z-index: 99; }
           .navigation .header .nav .nav__list .nav__item .nav__link {
-            z-index: 5;
+            z-index: 99;
             display: block;
             text-align: center;
             text-decoration: none;
@@ -1105,10 +1105,8 @@ button {
 @media only screen and (max-width: 576px) {
   .des-a-t {
     padding: 1rem !important; }
-  .about-bot {
-    margin: 0 !important; }
-    .about-bot .contend-a-b {
-      padding: 1rem; } }
+  .about-bot .contend-a-b {
+    padding: 1rem; } }
 
 @media only screen and (max-width: 768px) {
   .about-top .des-a-t .tit-des-t {
@@ -1146,11 +1144,9 @@ button {
       margin-top: 5rem; } }
 
 @media only screen and (max-width: 1200px) {
-  .about-bot {
-    margin-bottom: 0; }
-    .about-bot .contend-a-b .vid-a-b video {
-      width: 100%;
-      height: 100%; } }
+  .about-bot .contend-a-b .vid-a-b video {
+    width: 100%;
+    height: 100%; } }
 
 .box-title {
   margin-top: -100px;
@@ -1160,19 +1156,16 @@ button {
   background: whitesmoke;
   height: 180px; }
 
-.zIndex {
-  z-index: 2 !important; }
-
 .box-img {
   position: relative; }
   .box-img::before {
     content: '';
     position: absolute;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
-    transition: all .5s ease .2s;
-    opacity: 0; }
+    opacity: 0;
+    transition: all .5s ease .2s; }
   .box-img img {
     display: block;
     width: 100%; }
@@ -1202,7 +1195,7 @@ button {
   padding: 1.2rem 0; }
 
 .modal-content {
-  z-index: 2;
+  z-index: 13;
   position: relative; }
   .modal-content .service-modal {
     display: none;
@@ -1210,11 +1203,8 @@ button {
     top: 50%;
     z-index: 1;
     background-color: white;
-    max-width: 900px;
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    width: 98.5%;
+    left: 10px;
     box-shadow: 0 2px 3px 1px grey; }
     .modal-content .service-modal::before {
       content: '';
@@ -1223,13 +1213,13 @@ button {
       top: 0;
       left: 0;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.01);
       z-index: -1; }
     .modal-content .service-modal h3 {
       text-align: center;
       background-color: white;
       padding: 2rem 0;
-      z-index: 1; }
+      z-index: 3; }
     .modal-content .service-modal .info-modal {
       background-color: #fff;
       padding: 0 7rem; }
@@ -1272,15 +1262,11 @@ button {
 
 @media (max-width: 768px) {
   .box-modal:last-child {
-    margin: auto !important; }
-  .box-modal .service-modal {
-    width: 95%; } }
+    margin: auto !important; } }
 
 @media (max-width: 576px) {
   .box-title {
-    padding: 0 1rem; }
-  .service-modal {
-    width: 96% !important; } }
+    padding: 0 1rem; } }
 
 .title {
   margin: 3rem 0;
@@ -1351,20 +1337,14 @@ button {
     margin: 0;
     padding: 0 2rem; }
     .form .form-signup .form-main form {
-      width: 100%; }
-  .title {
-    margin: 1rem 0 !important; } }
+      width: 100%; } }
 
 @media only screen and (max-width: 567px) {
-  .form {
-    padding-bottom: 0; }
-    .form .form-signup {
-      margin: 0;
-      padding: 0 1rem; }
-      .form .form-signup .form-main form {
-        width: 100%; }
-  .title {
-    margin: .5rem 0 !important; } }
+  .form .form-signup {
+    margin: 0;
+    padding: 0 1rem; }
+    .form .form-signup .form-main form {
+      width: 100%; } }
 
 footer {
   text-align: center;
@@ -1464,10 +1444,8 @@ button {
 @media only screen and (max-width: 576px) {
   .des-a-t {
     padding: 1rem !important; }
-  .about-bot {
-    margin: 0 !important; }
-    .about-bot .contend-a-b {
-      padding: 1rem; } }
+  .about-bot .contend-a-b {
+    padding: 1rem; } }
 
 @media only screen and (max-width: 768px) {
   .about-top .des-a-t .tit-des-t {
@@ -1505,11 +1483,9 @@ button {
       margin-top: 5rem; } }
 
 @media only screen and (max-width: 1200px) {
-  .about-bot {
-    margin-bottom: 0; }
-    .about-bot .contend-a-b .vid-a-b video {
-      width: 100%;
-      height: 100%; } }
+  .about-bot .contend-a-b .vid-a-b video {
+    width: 100%;
+    height: 100%; } }
 
 .box-title {
   margin-top: -100px;
@@ -1519,19 +1495,16 @@ button {
   background: whitesmoke;
   height: 180px; }
 
-.zIndex {
-  z-index: 2 !important; }
-
 .box-img {
   position: relative; }
   .box-img::before {
     content: '';
     position: absolute;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
-    transition: all .5s ease .2s;
-    opacity: 0; }
+    opacity: 0;
+    transition: all .5s ease .2s; }
   .box-img img {
     display: block;
     width: 100%; }
@@ -1561,7 +1534,7 @@ button {
   padding: 1.2rem 0; }
 
 .modal-content {
-  z-index: 2;
+  z-index: 13;
   position: relative; }
   .modal-content .service-modal {
     display: none;
@@ -1569,11 +1542,8 @@ button {
     top: 50%;
     z-index: 1;
     background-color: white;
-    max-width: 900px;
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    width: 98.5%;
+    left: 10px;
     box-shadow: 0 2px 3px 1px grey; }
     .modal-content .service-modal::before {
       content: '';
@@ -1582,13 +1552,13 @@ button {
       top: 0;
       left: 0;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.01);
       z-index: -1; }
     .modal-content .service-modal h3 {
       text-align: center;
       background-color: white;
       padding: 2rem 0;
-      z-index: 1; }
+      z-index: 3; }
     .modal-content .service-modal .info-modal {
       background-color: #fff;
       padding: 0 7rem; }
@@ -1631,15 +1601,11 @@ button {
 
 @media (max-width: 768px) {
   .box-modal:last-child {
-    margin: auto !important; }
-  .box-modal .service-modal {
-    width: 95%; } }
+    margin: auto !important; } }
 
 @media (max-width: 576px) {
   .box-title {
-    padding: 0 1rem; }
-  .service-modal {
-    width: 96% !important; } }
+    padding: 0 1rem; } }
 
 .title {
   margin: 3rem 0;
@@ -1710,17 +1676,11 @@ button {
     margin: 0;
     padding: 0 2rem; }
     .form .form-signup .form-main form {
-      width: 100%; }
-  .title {
-    margin: 1rem 0 !important; } }
+      width: 100%; } }
 
 @media only screen and (max-width: 567px) {
-  .form {
-    padding-bottom: 0; }
-    .form .form-signup {
-      margin: 0;
-      padding: 0 1rem; }
-      .form .form-signup .form-main form {
-        width: 100%; }
-  .title {
-    margin: .5rem 0 !important; } }
+  .form .form-signup {
+    margin: 0;
+    padding: 0 1rem; }
+    .form .form-signup .form-main form {
+      width: 100%; } }
